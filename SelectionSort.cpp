@@ -9,7 +9,7 @@ void selectionSort(int arr[],int n){
 
         for(int j=i+1;j<n;j++){
 
-            if(arr[j] < arr[minIndex]){
+            if(arr[j]<arr[minIndex]){
                 minIndex = j;
             }
         }
@@ -29,9 +29,13 @@ int main(){
 
     int num[5] = {4,3,2,0,11};
 
+    cout<<"The given array is: ";
+    printArray(num,5);
+
     selectionSort(num,5);
-    cout<<"The sorted array is: ";
+    cout<<"The sorted array using selection sort is: ";
     printArray(num,5);
 
     return 0;
 }
+
