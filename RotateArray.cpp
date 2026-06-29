@@ -14,6 +14,7 @@ void rotate(vector<int> &arr,int n,int k){
 }
 
 void printArray(vector<int> &arr,int n){
+    
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
