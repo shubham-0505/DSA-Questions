@@ -38,7 +38,7 @@ int main(){
         }
     }
 
-    cout<<"The elements of the arrays are: "<<endl;
+    cout<<"The elements of the array are: "<<endl;
     print(num);
 
     cout<<"The row wise sum of the array is: "<<endl;
