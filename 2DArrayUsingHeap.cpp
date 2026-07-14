@@ -25,7 +25,7 @@ int main(){
     // Declaring 2D array dynamically
     int **arr = new int *[row];
 
-    // Creating 2D array. We are basically creating a column array for each row.
+    // Creating 2D array. We are basically creating a column array for each row
     for(int i=0;i<row;i++){
         arr[i] = new int[col];
     }
