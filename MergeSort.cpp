@@ -31,7 +31,7 @@ void mergeSortedArray(int *arr,int s,int e){
     int j=0;
     mainArrIndex = s;
 
-  // Merge 2 sorted arrays arr1 and arr2 back into main array
+    // Merge 2 sorted arrays arr1 and arr2 back into main array
     while(i<len1 && j<len2){
 
         if(arr1[i] < arr2[j]){
@@ -58,6 +58,10 @@ void mergeSortedArray(int *arr,int s,int e){
         mainArrIndex++;
         j++;
     }
+
+    // Delete dynamically allocated memory for arr1 and arr2
+    delete []arr1;
+    delete []arr2;
 }
 
 void mergeSort(int *arr, int s,int e){
