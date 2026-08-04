@@ -46,6 +46,7 @@ void mergeSortedArray(int *arr,int s,int e){
         }
     }
 
+    // Copy remaining elements from arr1 and arr2 into main array
     while(i<len1){
         arr[mainArrIndex] = arr1[i];
         mainArrIndex++;
