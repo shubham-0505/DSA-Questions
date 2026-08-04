@@ -31,7 +31,7 @@ void mergeSortedArray(int *arr,int s,int e){
     int j=0;
     mainArrIndex = s;
 
-  // Merge 2 sorted arrays arr1 and arr2
+  // Merge 2 sorted arrays arr1 and arr2 back into main array
     while(i<len1 && j<len2){
 
         if(arr1[i] < arr2[j]){
