@@ -69,8 +69,6 @@ void deleteNode(node* &tail, int value){
             curr = curr->next;
         }
 
-        prev->next = curr->next;
-
         if(prev == curr){
             tail = NULL;
         }
@@ -79,6 +77,7 @@ void deleteNode(node* &tail, int value){
             tail = prev;
         }
 
+        prev->next = curr->next;
         curr->next = NULL;
         delete curr;
     }
